@@ -7,7 +7,7 @@
   />
 </p>
 
-<img src="docs/screenshots/bloom-logo.png" alt="Bloom" width="120"/>
+<img src="./assets/bloom-logo.png" alt="Bloom" width="120"/>
 
 # Bloom
 
