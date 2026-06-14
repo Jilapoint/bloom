@@ -1,4 +1,11 @@
 <div align="center">
+<p align="center">
+  <img
+    src="./assets/BannerBloom.png"
+    alt="Bloom — Women's Health AI Agents"
+    width="100%"
+  />
+</p>
 
 <img src="docs/screenshots/bloom-logo.png" alt="Bloom" width="120"/>
 
