@@ -94,46 +94,10 @@ Then it proposes a concrete plan, drafts a neutral absence email, and offers cal
 ## Architecture
 
 ### High-level
+<img width="1672" height="941" alt="BloomAgentsOverview" src="https://github.com/user-attachments/assets/c47290b7-daf9-4771-b5db-65297b4109a1" />
 
-```
-Microsoft Teams ──► React SPA (App Service) ──► FastAPI (App Service)
-                                                       │
-                                                       ▼
-                                  Microsoft Agent Framework
-                                  ┌────────────────────────┐
-                                  │ Employee project       │
-                                  │ ┌────────────────────┐ │
-                                  │ │ Orchestrator       │ │
-                                  │ ├────────────────────┤ │
-                                  │ │ Cycle | Conception │ │
-                                  │ │ Menopause | Breast │ │
-                                  │ │ Treatment          │ │
-                                  │ └────────────────────┘ │
-                                  └──────────┬─────────────┘
-                                             │
-                                  ╔══════════════════════════╗
-                                  ║ confidentiality wall     ║
-                                  ║ (Azure RBAC enforced)    ║
-                                  ╚══════════════════════════╝
-                                             │
-                                  ┌──────────┴─────────────┐
-                                  │ HR project             │
-                                  │ ┌────────────────────┐ │
-                                  │ │ Policy Agent       │ │
-                                  │ └────────────────────┘ │
-                                  └──────────┬─────────────┘
-                                             │
-                                             ▼
-                              Foundry IQ (3 knowledge bases)
-                              ┌──────────┬──────────┬──────────┐
-                              │ Medical  │ Legal    │ Company  │
-                              │ WHO/NICE │ L.1225-16│ agreements│
-                              └──────────┴──────────┴──────────┘
-                                             │
-                                             ▼
-                              Cosmos DB (employee-memory ‖ hr-aggregates)
-                              [separated by RBAC role assignments]
-```
+<img width="1672" height="941" alt="Bloom architecture" src="https://github.com/user-attachments/assets/8555e41a-ed4d-4246-9a4e-3ec470db8081" />
+
 
 ### Why two Foundry projects?
 
@@ -353,16 +317,6 @@ The Treatment Recovery agent proposes blocking three days on the user's calendar
 
 ---
 
-## Hackathon prize alignment
-
-Bloom is designed to compete across multiple tracks of the Microsoft AI Agents Hackathon:
-
-- **🧠 Reasoning Agents** — multi-step cross-source reasoning is the core differentiator
-- **❤️ Hack for Good** — measurable impact on women's retention and well-being at work
-- **♿ Accessibility** — voice-native I/O, plain language, WCAG 2.2 AA, multilingual (FR/EN/ES/AR)
-- **🏆 Best Overall** — full vertical product with infrastructure, agents, frontend, and deployment
-
----
 
 ## Documentation
 
